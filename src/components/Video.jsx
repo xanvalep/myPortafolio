@@ -1,17 +1,13 @@
-
+import  '..//css/Video.css';
 
 export default function Video (props ) {
 return(
-    <div className="container my-3">
-     <h1> 
+    <div className="container bg-warning my-3 video">
+     <h2 className="mt-5 mb-5"> 
      Video
-     </h1>
-     <h2>   
-     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
      </h2>
-     <h2>   
-     "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-     </h2>  
-     <span></span>
+     <div className="container-fluid embed-responsive embed-responsive-16by9 mb-5">
+       <iframe title='prueba' className="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+      </div>
     </div> 
 )}

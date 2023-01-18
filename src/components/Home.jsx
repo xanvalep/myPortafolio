@@ -25,8 +25,9 @@ return(
      <h2>   
      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
      </h2>  
-     <span></span>
     </div> 
      <Video/>
+     <div className='container svg'>prueba</div>
+
     </div>  
 )}
