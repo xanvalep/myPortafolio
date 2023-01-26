@@ -1,0 +1,28 @@
+/*
+
+*/
+
+.credits::before {
+  content:" ";
+  display: block;
+  height: 2px;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+  .credits{
+    position: relative;
+    /*  new lines  */
+    max-width: 1140px;
+    margin: 0px auto;
+  }
+  @media (max-width: 992px) {
+    .credits::before {
+      content:" ";
+      display: none;
+
+    }
+  }

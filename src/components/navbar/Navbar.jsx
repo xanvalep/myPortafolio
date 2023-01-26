@@ -2,35 +2,35 @@ import { Link} from "react-router-dom";
 export default function Navbar (props ) {
     return (
       <div className="">
-        <header className="App-header bg-secondary">
+        <header className="App-header ">
           <div className="collapse navbar-collapse custom-navmenu " id="main-navbar">
             <div className="container py-2 py-md-5 ">
-            <div className="row align-items-start">
-              <div className="col-md-2">
-                <ul className="custom-menu">
-                 <li className=""><Link to="/">Home</Link></li>
-                 <li><Link to="/about">About Me</Link></li>
-                 <li><Link to="/works">Works</Link></li>
-                </ul>
-              </div>  
-             <div className="col-md-6 d-none d-md-block  mr-auto">
-              <div className="tweet d-flex">
-              <div>
-                <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br/> </em></p>
-              </div>
-             </div>
-             </div>
-               <div className="col-md-4 d-none d-md-block">
+              <div className="row align-items-start">
+                <div className="col-md-2">
+                  <ul className="custom-menu">
+                    <li className=""><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Me</Link></li>
+                    <li><Link to="/works">Works</Link></li>
+                  </ul>
+                </div>  
+                <div className="col-md-6 d-none d-md-block  mr-auto">
+                  <div className="d-flex">
+                      <div>
+                        <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br/> </em></p>
+                      </div>
+                  </div>
+                </div>
+                <div className="col-md-4 d-none d-md-block">
                    <h3>Hire Me</h3>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br/> myemail@gmail.com </p>
                    <span className="bi bi-twitter text-white mt-2"></span>
-                   <span className="bi bi-github text-white mt-2 mx-2"></span>
-                   <span className="bi bi-youtube text-white mt-2"></span>
-                   <span className="bi bi-linkedin text-white mt-2 mx-2"></span>
-                   <span className="bi bi-facebook text-white mt-2 "></span>
-               </div>
+                   <span className="bi bi-github text-white mt-2 mx-1"></span>
+                   <span className="bi bi-youtube text-white mt-2 mx-1"></span>
+                   <span className="bi bi-linkedin text-white mt-2 mx-1"></span>
+                   <span className="bi bi-facebook text-white mt-2 mx-1"></span>
+                </div>
              </div>
-             </div>
+            </div>
           </div>
           <nav className="navbar navbar-light custom-navbar">
              <div className="container">
