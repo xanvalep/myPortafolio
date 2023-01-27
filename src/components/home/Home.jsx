@@ -4,6 +4,7 @@ import Typskill from './Typskill';
 import Video from './Video';
 
 export default function Home (props ) {
+  let url ="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
 return(
     <div> 
 
@@ -15,7 +16,7 @@ return(
       </div>
      </section> 
      </div> 
-      <Video/>
+      <Video src={url} />
       <div className='container'>
       <hr className="border border-dark border-1  opacity-100" />
       </div>

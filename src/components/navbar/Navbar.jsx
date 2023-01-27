@@ -34,7 +34,7 @@ export default function Navbar (props ) {
           </div>
           <nav className="navbar navbar-light custom-navbar">
              <div className="container">
-               <Link to="/" className="navbar-brand">MyPortfolio.</Link>
+               <Link to="/" className="navbar-brand">My Portfolio</Link>
                <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></a>
             </div> 
           </nav>
