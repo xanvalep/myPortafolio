@@ -23,11 +23,11 @@ export default function Navbar (props ) {
                 <div className="col-md-4 d-none d-md-block">
                    <h3>Hire Me</h3>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br/> myemail@gmail.com </p>
-                   <span className="bi bi-twitter text-white mt-2"></span>
-                   <span className="bi bi-github text-white mt-2 mx-1"></span>
-                   <span className="bi bi-youtube text-white mt-2 mx-1"></span>
-                   <span className="bi bi-linkedin text-white mt-2 mx-1"></span>
-                   <span className="bi bi-facebook text-white mt-2 mx-1"></span>
+                   <span className="bi bi-twitter mt-2"></span>
+                   <span className="bi bi-github mt-2 mx-1"></span>
+                   <span className="bi bi-youtube mt-2 mx-1"></span>
+                   <span className="bi bi-linkedin mt-2 mx-1"></span>
+                   <span className="bi bi-facebook mx-1"></span>
                 </div>
              </div>
             </div>

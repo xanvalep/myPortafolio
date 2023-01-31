@@ -1,4 +1,4 @@
-import  '..//..//css/Video.css';
+import  '..//..//css/Video.scss';
 
 export default function Video (props ) {
 

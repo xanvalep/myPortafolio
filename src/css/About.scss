@@ -1,7 +1,4 @@
 .bck{
-    background-color: blueviolet;
-    height: 100vh;
-    font-size: 20px;
     text-align: center;
 }
 .bck h2{
@@ -28,8 +25,14 @@
     background: black;
     right: 0;
   }
+  .bck h3{
+    font-size: 20px;
+}
 
-  
+.but{
+    height: 600px;
+}
+
 @media (max-width: 992px) {
     .bck h2::before {
         content:" ";

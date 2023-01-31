@@ -1,0 +1,15 @@
+.content{
+    height: 600px;
+    margin-top: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+   
+    li:not(:first-child) {
+       margin-top: 78px;
+  }
+  }
+
