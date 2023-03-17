@@ -1,15 +1,31 @@
 $color-1: rgb(1, 5, 9);
+$color-bck: rgb(202,204, 204);
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+footer{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 16px;
+  color: $color-bck;
 
-
-.footer a {
-  color: $color-1;
 }
+
+
 /*
 
 */
+.credits::after {
+  content:" ";
+  display: block;
+  height: 48px;
+  width: 241px;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(0%, -50%);
+  z-index: -10;
+  background: 		rgb(108, 117, 125);
+}
 
 .credits::before {
   content:" ";
@@ -27,6 +43,12 @@ $color-1: rgb(1, 5, 9);
     /*  new lines  */
     max-width: 1140px;
     margin: 0px auto;
+    span{
+      position: relative;
+      top:-8px;
+      right: -77.6%;
+      margin-left: 20px;
+    }
   }
   @media (max-width: 992px) {
     .credits::before {

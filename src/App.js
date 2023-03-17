@@ -16,12 +16,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/works" element={<Works/>}/>    
-      </Routes>
-      <div className='container'>
-      <hr className="border border-dark border-1  opacity-100" />
-      </div>
-
-      <Pattern/>  
+      </Routes> 
       <Footer /> 
     
     </div>

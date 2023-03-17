@@ -1,3 +1,4 @@
+$color-bck: rgb(202,204, 204);
 $color-1: rgb(1, 5, 9);
 $color-base: rgb(239, 227, 253);
 $color-p:rgb(35,236,245);
@@ -7,7 +8,9 @@ $font-body: 'Pangolin', cursive;
 body {
   font-family: $font-body;
   font-size: 18px;
+  background-color:$color-bck ;
   color: $color-1;
+
 }
 
 a {
@@ -27,7 +30,8 @@ h5,
 h6,
 .font-heading {
     text-transform: uppercase;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 
 }
 
@@ -89,141 +93,7 @@ h6,
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-/* Custom Navmenu */
-.custom-navmenu {
-  background: black;
-}
 
-.custom-navmenu .custom-menu,
-.custom-navmenu .custom-menu li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-family: "Poppins", sans-serif;
-}
-
-.custom-navmenu .custom-menu li {
-  margin-bottom: 0;
-  font-size: 20px;
-}
-
-.custom-navmenu .custom-menu li a {
-  color: $color-p;
-  padding: 10px 0 !important;
-}
-
-.custom-navmenu .custom-menu li a:hover {
-  text-decoration: none;
-  color:  rgba(255, 255, 255, 0.6);
-}
-
-.custom-navmenu .custom-menu li.active a {
-  text-decoration: underline;
-}
-
-.custom-navmenu h3 {
-  font-size: 20px;
-  color: $color-p;
-}
-
-.custom-navmenu p {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.custom-navmenu span {
-  color: $color-p;
-}
-
-.custom-navmenu a:hover {
-  color: $color-p;
-}
-
-/* Custom Navbar */
-.custom-navbar {
-  padding-top: 50px;
-  width: 100%;
-}
-
-@media (max-width: 780px) {
-  .custom-navbar>.container {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-.custom-navbar .navbar-brand {
-  font-size: 1.7rem;
-}
-
-/* Burger */
-.burger {
-  width: 28px;
-  height: 32px;
-  cursor: pointer;
-  position: relative;
-}
-
-.burger:before,
-.burger span,
-.burger:after {
-  width: 100%;
-  height: 2px;
-  display: block;
-  background: #000;
-  border-radius: 2px;
-  position: absolute;
-  opacity: 1;
-}
-
-.burger:before,
-.burger:after {
-  transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
-  content: "";
-}
-
-.burger:before {
-  top: 4px;
-}
-
-.burger span {
-  top: 15px;
-}
-
-.burger:after {
-  top: 26px;
-}
-
-/* Hover */
-.burger:hover:before {
-  top: 7px;
-}
-
-.burger:hover:after {
-  top: 23px;
-}
-
-/* Click */
-.burger.active span {
-  opacity: 0;
-}
-
-.burger.active:before,
-.burger.active:after {
-  top: 40%;
-}
-
-.burger.active:before {
-  transform: rotate(45deg);
-}
-
-.burger.active:after {
-  transform: rotate(-45deg);
-}
-
-.burger:focus {
-  outline: none;
-}
 
   /* width */
   ::-webkit-scrollbar {
@@ -232,7 +102,7 @@ h6,
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 4px grey; 
+    box-shadow: inset 0 0 4px $color-1; 
 
   }
    

@@ -5,7 +5,12 @@ export default function Footer (props ) {
          <footer class="footer" role="contentinfo">
             <div class="row">
                 <div class="col-sm-12 col-md-12"> 
-                   <div class="credits text-end"> Designed by Zander Valero</div>
+                   <div class="credits">
+                    <span>
+
+                     Diseñado por Zander Valero
+                    </span>
+                     </div>
                 </div>
             </div>
          </footer>
