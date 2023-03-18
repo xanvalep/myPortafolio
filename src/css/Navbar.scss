@@ -63,7 +63,10 @@ $font-nav:"Poppins", sans-serif;
   }
 
   .custom-navbar .navbar-brand {
-    font-size: 1.3rem;
+    img{
+      width: 120px;
+      transform: rotate(-7deg);
+    }
   }
   @media (max-width: 780px) {
     .custom-navbar>.container {

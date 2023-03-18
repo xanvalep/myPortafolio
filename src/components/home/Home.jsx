@@ -1,5 +1,6 @@
 import '..//..//css/Home.scss';
 import logR from '..//..//svgs/logR.svg';
+import logx from '..//..//svgs/logx.svg';
 import Typskill from './Typskill';
 import Video from './Video';
 
@@ -11,7 +12,9 @@ return(
      <section id="hero">
       <div className="hero-container">
       <h1 className="animate__animated animate__fadeIn">
-     <img src={logR} alt="" srcset="" />
+   
+      <img src={logR} alt="" srcset="" />
+      
       </h1>
       <Typskill/>  
 

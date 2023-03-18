@@ -1,4 +1,5 @@
 import "..//..//css/Navbar.scss";
+import stickert from "..//..//svgs/stickert.svg";
 import { Link} from "react-router-dom";
 export default function Navbar (props ) {
     return (
@@ -35,12 +36,13 @@ export default function Navbar (props ) {
           </div>
           <nav className="navbar navbar-light custom-navbar">
              <div className="container">
-               <Link to="/" className="navbar-brand">Mi Portafolio</Link>
-               <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></a>
-            </div> 
-          </nav>
+                <Link to="/" className="navbar-brand">
+                <img src={stickert} alt="" srcset="" />
+                  </Link>
+                  <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></a>
+              </div> 
+         </nav>
         </header>
-          
       </div>
 )}
 
@@ -77,7 +79,5 @@ const select = (el, all = false) => {
    * burgerMenu
    */
   const burgerMenu = select('.burger')
-  on('click', '.burger', function(e) {
-    burgerMenu.classList.toggle('active');
-  })
+  on('click', '.burger', function(e) {burgerMenu.classList.toggle('active');})
 

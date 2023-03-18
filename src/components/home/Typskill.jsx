@@ -8,7 +8,7 @@ return(
            ! 
             <span>
             
-        <Typed
+              <Typed
                 strings={[
                     'Im a Freelancer',
                     'Im a Front-end Web Developer',

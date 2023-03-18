@@ -21,7 +21,6 @@ $color-p:rgb(35,236,245);
   }
   
   #hero h1 {
-    margin: 0 0 10px 0;
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
@@ -35,28 +34,51 @@ $color-p:rgb(35,236,245);
   }
   #hero h1::after{
     content:url(..//svgs/logx.svg);
+    display: inline-block;
     position: relative;
-    top: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(-180deg);
+    top: -15px;
     right: -65px;
-    z-index: -20;
+    z-index: 20;
+    animation-name: prove;
+    animation-duration: 4s;    
   }
   #hero h1::before{
     content:url(..//svgs/logx.svg);
+    display: inline-block;
     position: relative;
-    top: 18px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(-180deg);
+    top: 45px;
     left: -40px;
-    z-index: -20;
+    z-index: 20;
+    animation-name: prove;
+    animation-duration: 4s;   
+  }
+
+  @keyframes prove {
+    0%   {}
+    25%  {}
+    50%  {}
+    75%  {}
+    100% { transform: rotate(360deg);}
   }
   #hero p {
-
-    margin-bottom: 50px;
+   outline: 2px solid yellowgreen;
+    margin-top: 60px;
     font-size: 32px;
     
     
   }
   
   #hero p span {
-    margin: 0px 2px;
     padding-bottom: 4px;
     letter-spacing: 1px;
    /* border-bottom: 3px solid #149ddd;*/
