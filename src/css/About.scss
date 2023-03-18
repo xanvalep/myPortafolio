@@ -31,15 +31,15 @@ $color-p:rgb(35,236,245);
 }
 
 .but{
-    width: 380px;
-    height: 400px;
+    width: 360px;
+    min-height: 400px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 20%);
 }
 .skill{
-    width: 380px;
-    height: 400px;
+    width: 360px;
+    min-height: 400px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);

@@ -1,4 +1,12 @@
+.legend-wdthSpc{
+    outline: 2px solid greenyellow;
+    width: 480px;
+    min-height: 400px;
+    position: relative;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .wks li{
-    border-bottom: dotted 2px black;
-    height: 64px;
+
 }

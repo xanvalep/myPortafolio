@@ -6,7 +6,8 @@ $color-bck: rgb(202,204, 204);
 footer{
   font-family: 'Permanent Marker', cursive;
   font-size: 16px;
-  color: $color-bck;
+  color: $color-1;
+  margin-bottom: 8px;
 
 }
 
@@ -27,27 +28,18 @@ footer{
   background: 		rgb(108, 117, 125);
 }
 
-.credits::before {
-  content:" ";
-  display: block;
-  height: 2px;
-  width: 75%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  background: black;
-}
 
   .credits{
     position: relative;
     /*  new lines  */
     max-width: 1140px;
-    margin: 0px auto;
+
     span{
       position: relative;
       top:-8px;
-      right: -77.6%;
-      margin-left: 20px;
+      left: 82%;
+      transform: translate(-50%, -50%);
+      
     }
   }
   @media (max-width: 992px) {
@@ -55,5 +47,15 @@ footer{
       content:" ";
       display: none;
 
+    }
+    .credits{  
+      span{
+        position: relative;
+        top:-8px;
+        left: 62%;
+        transform: translate(-50%, -50%);
+       
+        
+      }
     }
   }

@@ -8,7 +8,7 @@ export default function Footer (props ) {
                    <div class="credits">
                     <span>
 
-                     Diseñado por Zander Valero
+                     Diseñado por   ZV
                     </span>
                      </div>
                 </div>
