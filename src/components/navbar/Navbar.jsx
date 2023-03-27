@@ -1,8 +1,17 @@
 import "..//..//css/Navbar.scss";
 import stickert from "..//..//svgs/stickert.svg";
+import { useState } from "react";
 import { Link} from "react-router-dom";
 export default function Navbar (props ) {
-    return (
+// crea un estado por el switch 
+const [switchToggled,setSwitchToggled]= useState(false);
+   
+const toggle= ()=> {
+  switchToggled ? setSwitchToggled (false) : setSwitchToggled(true);
+  console.log(switchToggled);
+}
+
+return (
       <div className="">
         <header className="App-header ">
             <div className="collapse navbar-collapse custom-navmenu " id="main-navbar">
@@ -39,7 +48,7 @@ export default function Navbar (props ) {
                 <Link to="/" className="navbar-brand">
                 <img src={stickert} alt="" srcset="" />
                   </Link>
-                  <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></a>
+                  <button  onClick={toggle} className={switchToggled ? "burger active" : "burger"}  data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></button>
               </div> 
           </nav>
         </header>
@@ -47,36 +56,7 @@ export default function Navbar (props ) {
 )}
 
 
-const select = (el, all = false) => {
-  el = el.trim()
-  if (all) {
-    return [...document.querySelectorAll(el)]
-  } else {
-    return document.querySelector(el)
-  }
-}
 
 /**
- * Easy event listener function
+  <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"></a> 
  */
-const on = (type, el, listener, all = false) => {
-  let selectEl = select(el, all)
-  if (selectEl) {
-    if (all) {
-      selectEl.forEach(e => e.addEventListener(type, listener))
-    } else {
-      selectEl.addEventListener(type, listener)
-    }
-  }
-}
-
-/**
- * Easy on scroll event listener 
- */
-
-
-/**
- * burgerMenu
- */
-const burgerMenu = select('.burger')
-on('click', '.burger', function(e) {burgerMenu.classList.toggle('active');})

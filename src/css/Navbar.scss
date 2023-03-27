@@ -58,8 +58,13 @@ $font-nav:"Poppins", sans-serif;
   
   /* Custom Navbar */
   .custom-navbar {
-    padding-top: 50px;
+    padding-top: 28px;
     width: 100%;
+    button{
+      outline: 2px solid teal;
+      background-color: transparent;
+      border: none;
+    }
   }
 
   .custom-navbar .navbar-brand {
@@ -67,6 +72,7 @@ $font-nav:"Poppins", sans-serif;
       width: 120px;
       transform: rotate(-7deg);
     }
+
   }
   @media (max-width: 780px) {
     .custom-navbar>.container {
@@ -78,6 +84,7 @@ $font-nav:"Poppins", sans-serif;
 
   
   /* Burger */
+
   .burger {
     width: 32px;
     height: 32px;
@@ -104,22 +111,24 @@ $font-nav:"Poppins", sans-serif;
   }
   
   .burger:before {
-    top: 4px;
+    top: 6px;
+    right: 0;
   }
   
 
   
   .burger:after {
-    top: 18px;
+    top: 20px;
+    right: 0;
   }
   
   /* Hover */
   .burger:hover:before {
-    top: 7px;
+    top: 9px;
   }
   
   .burger:hover:after {
-    top: 21px;
+    top: 23px;
   }
   
   /* Click */
