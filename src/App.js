@@ -4,7 +4,6 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Works from './components/works/Works';
-import Pattern from './components/about/Pattern';
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 function App() {
@@ -24,3 +23,4 @@ function App() {
 }
 
 export default App;
+

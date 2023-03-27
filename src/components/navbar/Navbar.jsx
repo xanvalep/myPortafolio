@@ -5,8 +5,8 @@ export default function Navbar (props ) {
     return (
       <div className="">
         <header className="App-header ">
-          <div className="collapse navbar-collapse custom-navmenu " id="main-navbar">
-            <div className="container py-2 py-md-5 ">
+            <div className="collapse navbar-collapse custom-navmenu " id="main-navbar">
+             <div className="container py-2 py-md-5 ">
               <div className="row align-items-start">
                 <div className="col-md-2">
                   <ul className="custom-menu">
@@ -31,53 +31,52 @@ export default function Navbar (props ) {
                    <span className="bi bi-linkedin mt-2 mx-1"></span>
                    <span className="bi bi-facebook mx-1"></span>
                 </div>
+               </div>
              </div>
-            </div>
-          </div>
-          <nav className="navbar navbar-light custom-navbar">
+           </div>
+           <nav className="navbar navbar-light custom-navbar">
              <div className="container">
                 <Link to="/" className="navbar-brand">
                 <img src={stickert} alt="" srcset="" />
                   </Link>
                   <a href="#" className="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></a>
               </div> 
-         </nav>
+          </nav>
         </header>
       </div>
 )}
 
 
 const select = (el, all = false) => {
-    el = el.trim()
+  el = el.trim()
+  if (all) {
+    return [...document.querySelectorAll(el)]
+  } else {
+    return document.querySelector(el)
+  }
+}
+
+/**
+ * Easy event listener function
+ */
+const on = (type, el, listener, all = false) => {
+  let selectEl = select(el, all)
+  if (selectEl) {
     if (all) {
-      return [...document.querySelectorAll(el)]
+      selectEl.forEach(e => e.addEventListener(type, listener))
     } else {
-      return document.querySelector(el)
+      selectEl.addEventListener(type, listener)
     }
   }
+}
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener 
-   */
+/**
+ * Easy on scroll event listener 
+ */
 
 
-  /**
-   * burgerMenu
-   */
-  const burgerMenu = select('.burger')
-  on('click', '.burger', function(e) {burgerMenu.classList.toggle('active');})
-
+/**
+ * burgerMenu
+ */
+const burgerMenu = select('.burger')
+on('click', '.burger', function(e) {burgerMenu.classList.toggle('active');})

@@ -1,21 +1,19 @@
 import '..//..//css/Home.scss';
 import logR from '..//..//svgs/logR.svg';
-import logx from '..//..//svgs/logx.svg';
 import Typskill from './Typskill';
-import Video from './Video';
 
 
 export default function Home (props ) {
-  let url ="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+ 
 return(
     <div className="container my-3"> 
      <section id="hero">
       <div className="hero-container">
-      <h1 className="animate__animated animate__fadeIn">
+      <h1 >
    
-      <img src={logR} alt="" srcset="" />
-      
+      <img className="animate__animated animate__fadeIn" src={logR} alt="" srcset="" />
       </h1>
+      
       <Typskill/>  
 
       </div>
