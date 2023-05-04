@@ -15,18 +15,6 @@ footer{
 /*
 
 */
-.credits::after {
-  content:" ";
-  display: block;
-  height: 48px;
-  width: 241px;
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(0%, -50%);
-  z-index: -10;
-  background: 		rgb(108, 117, 125);
-}
 
 
   .credits{
@@ -37,7 +25,8 @@ footer{
     span{
       position: relative;
       top:-8px;
-      left: 82%;
+      //left: 100%;
+      left: 89%;
       transform: translate(-50%, -50%);
       
     }
