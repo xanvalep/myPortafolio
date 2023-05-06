@@ -1,5 +1,5 @@
 import '..//..//css/Home.scss';
-import logR from '..//..//svgs/logR.svg';
+import logxx from '..//..//svgs/logxx.svg';
 import Typskill from './Typskill';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -22,7 +22,7 @@ return(
       <h1 >
       <img 
      ref={e => { imgLog = e}}
-     src={logR} alt="" srcset="" />
+     src={logxx} alt="" srcset="" />
       </h1>
       
       <Typskill/>  

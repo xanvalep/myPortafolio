@@ -5,7 +5,7 @@ export default function About (props ) {
         <div className="container bck">
          <h2 className='mt-3 mb-5 animate__animated animate__jackInTheBox'> About</h2>
          <Legend/>
-          <div className="text-start">
+          <div className="text-center">
           <h3 className='mt-3 mb-5 animate__animated animate__fadeIn'> skills</h3>
 
           </div>

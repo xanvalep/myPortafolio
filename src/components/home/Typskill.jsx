@@ -2,11 +2,11 @@ import Typed from "react-typed"
 
 export default function Typskill (props ) {
 return(
-    <div className="">
-        <p>
+    <div >
+        <p >
         
-           ! 
-            <span>
+           [
+            <span className="typ">
             
               <Typed
                 strings={[
@@ -21,7 +21,7 @@ return(
                 </Typed>
             
             </span>
-            ¡
+           ]
             </p>
     </div> 
 )}

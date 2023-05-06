@@ -45,7 +45,7 @@ return (
            <nav className="navbar navbar-light custom-navbar">
              <div className="container">
                 <Link to="/" className="navbar-brand">
-                <img src={stickert} alt="" srcset="" />
+                {/*<img src={stickert} alt="" srcset="" />*/}
                   </Link>
                   <button  onClick={toggle} className={switchToggled ? "burger active" : "burger"}  data-bs-toggle="collapse" data-bs-target="#main-navbar"><span></span></button>
               </div> 

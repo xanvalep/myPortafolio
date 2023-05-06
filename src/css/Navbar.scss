@@ -7,7 +7,7 @@ $font-nav:"Poppins", sans-serif;
 
 /* Custom Navmenu */
 .custom-navmenu {
-    background:$color-1;
+    background:transparent;
   }
   
   .custom-navmenu .custom-menu,
@@ -96,7 +96,7 @@ $font-nav:"Poppins", sans-serif;
     width: 100%;
     height: 3px;
     display: block;
-    background: $color-1;
+    background: yellowgreen;
     border-radius: 2px;
     position: absolute;
     opacity: 1;
