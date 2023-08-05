@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-base;
+  filter: blur(0.9px);
 
 
 a {
@@ -95,28 +96,6 @@ h6,
 # Header
 --------------------------------------------------------------*/
 
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 4px $color-1; 
-
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $color-1; 
- 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: gray; 
-  }
-
 }
+
 

@@ -11,8 +11,8 @@ export default function Home (props ) {
   useEffect(() => {
       console.log(imgLog);
       const tl = gsap.timeline({repeat: 0, repeatDelay: 1});
-      tl.to(imgLog, {opacity: 0, duration: 1});
-      tl.to(imgLog, {opacity: 1, duration: 1});
+     // tl.to(imgLog, {opacity: 0, duration: 1});
+     // tl.to(imgLog, {opacity: 1, duration: 1});
   },[])
 
 return(

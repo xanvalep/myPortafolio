@@ -30,9 +30,25 @@ $color-p:rgb(35,236,245);
       position: relative;
       height: 200px;
       width: auto;
+      opacity: 1;
+     
+      animation-name: transtion;
+      animation-duration: 2s;
     }
   
   }
+  /* The animation code */
+@keyframes transtion {
+  from {}
+  to {}
+  0%   {opacity: 0;}
+  25%  {}
+  50%  {}
+  75%  {}
+  100% { opacity: 1;}
+}
+
+
   p .typ::after{
     content:url(..//svgs/xsimx.svg);
     display: inline-block;
@@ -46,7 +62,7 @@ $color-p:rgb(35,236,245);
     top: 0px;
     right: -65px;
     z-index: 20;
-    animation-name: prove;
+    animation-name: xxx;
     animation-duration: 4s;    
   }
 
@@ -63,7 +79,7 @@ $color-p:rgb(35,236,245);
     top: 0px;
     left: -40px;
     z-index: 20;
-    animation-name: prove;
+    animation-name: xxx;
     animation-duration: 4s;   
   }
 

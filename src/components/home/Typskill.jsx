@@ -1,4 +1,4 @@
-import Typed from "react-typed"
+//import Typed from "react-typed"
 
 export default function Typskill (props ) {
 return(
@@ -7,7 +7,7 @@ return(
         
            [
             <span className="typ">
-            
+            {/** 
               <Typed
                 strings={[
                     'Im a Freelancer',
@@ -19,7 +19,7 @@ return(
                     backDelay={2000} 
                     loop >             
                 </Typed>
-            
+            */}
             </span>
            ]
             </p>
