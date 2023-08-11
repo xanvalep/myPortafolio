@@ -1,5 +1,5 @@
 import "..//..//css/Navbar.scss";
-import stickert from "..//..//svgs/stickert.svg";
+
 import { useState } from "react";
 import { Link} from "react-router-dom";
 export default function Navbar (props ) {
